@@ -1,0 +1,176 @@
+html , body {
+    width: 100%;
+    height: 1005;
+    padding: 0;
+    margin: 0px;
+}
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:white;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    border-bottom: solid black;
+}
+.nav {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 15%;
+    font-family: 'Abril Fatface', cursive;
+}
+.logo {
+    flex: 1 1 auto;
+    margin-left: 10%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 35px;
+    font-family: 'Yellowtail', cursive;
+}
+a {
+    margin: 15px;
+    color: #000;
+    text-decoration: none;
+}
+a:hover {
+    color: gainsboro;
+}
+.banner-area {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    animation: animate 20s ease-in-out infinite;
+}
+.outer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(243, 240, 240, 0.103);
+}
+.welcome {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: 'Alegreya', serif;
+}
+.welcome h1 {
+    font-size: 50px;
+}
+@keyframes animate {
+    0%,100% {
+        background-image: url(Image/bck3.jpg);
+    }
+    25% {
+        background-image: url(Image/bck8.jpg);
+    }
+    50% {
+        background-image: url(Image/bck9.jpg);
+    }
+    70% {
+        background-image: url(Image/bck10.jpg);
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+.about-area, .portofolio {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 700px;
+}
+.portofolio {
+    background-color: whitesmoke;
+}
+.text {
+    width: 80%;
+    height: 80%;
+    font-family: 'Alegreya', serif;
+}
+.about-area .text {
+    margin-top: 10px;
+}
+.about-area img {
+    float: right;
+    overflow: auto;
+}
+.networks img {
+    float: none;
+}
+.portofolio .text {
+    width: 85%;
+}
+.card {
+    box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    float: left;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+}
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.footer {
+    border-top: 0px;
+    background-color: #1f1f1f;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    padding: 25px 0px;
+    overflow: hidden;
+}
+.copyright p {
+    text-align: center;
+    color: white;
+}
+.button {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: rgba(15, 15, 15, 0.822);
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    margin-top: 20px;
+}
+.button:hover {
+    background: grey;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
+.networks img:hover {
+    background: grey;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+    border-radius: 45%;
+}
